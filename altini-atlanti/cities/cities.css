@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo img {
+  height: 80px;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.intro {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(prizeren.png);
+  height: 60vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+  align-items: center;
+}
+
+.links ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding-bottom: 20px;
+  background: rgba(59, 59, 59, 0.8);
+  padding-top: 20px;
+  color: #959595;
+}
+
+.links ul li {
+  list-style: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.contentHotel {
+  background-color: #e1e1e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hotelWrapper {
+  border-radius: 23px;
+  margin-top: 45px;
+  width: 90%;
+  background-color: rgb(248, 248, 248);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+}
+
+.textHotel {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding-right: 30%;
+}
+
+.viewHotel {
+  background-color: #add8e6;
+  padding: 6px 30px 6px 30px;
+  border-radius: 50px;
+}
+
+.rightSide {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+
+  align-items: center;
+  flex: 0.43;
+}
+
+.contentHotel img {
+  width: 230px;
+}
+
+.active {
+  color: white;
+  border-bottom: 1px solid #959595;
+}

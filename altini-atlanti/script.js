@@ -126,3 +126,30 @@ document.addEventListener("keydown", (e) => {
     closeModal1();
   }
 });
+
+let texts = [
+  "Nature      ",
+  "Landmarks      ",
+  "Arts      ",
+  "Museums      ",
+  "Sights      ",
+];
+let count = 0;
+let index = 0;
+let fullText = "";
+let currentText = "";
+
+type = () => {
+  if (count === texts.length) {
+    count = 0;
+  }
+  fullText = texts[count];
+  currentText = fullText.slice(0, ++index);
+  document.querySelector(".typing").textContent = currentText;
+  if (currentText.length === fullText.length) {
+    count++;
+    index = 0;
+  }
+  setTimeout(type, 400);
+};
+type();

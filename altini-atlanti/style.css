@@ -1,5 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 html {
   scroll-behavior: smooth;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .bottomLinks a {
@@ -525,4 +536,44 @@ html {
   cursor: pointer;
   border: none;
   background: none;
+}
+
+.dropdownContent {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  cursor: pointer;
+  color: white;
+  background: rgb(7, 7, 7);
+  width: 150px;
+
+  display: none;
+}
+
+.dropdownContent li {
+  /* padding-top: 20px; */
+  padding: 14px 10px 14px 10px;
+
+  border: 1px solid rgb(19, 19, 19);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.dropdownContent li a {
+  padding: 0;
+}
+#cities:hover .dropdownContent {
+  display: inline-flex;
+}
+
+#cities:hover .dropdownContent li:hover {
+  background: rgb(32, 32, 32);
+}
+
+.typing {
+  background-color: #020b00;
 }
