@@ -1,0 +1,29 @@
+*{
+    font-family:Montserrat ;
+}
+
+#cover{
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),  url(../images/jean\ leon.jpg) ;
+    background-size: cover;
+    height: 480px;
+    margin: 0;
+    background-position-y: center;
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 70px;
+     
+}
+
+body{
+    margin: 0;
+    padding-left: 0;
+}
+
+div h3{
+    color: white;
+    font-size: 36px;
+    padding-right: 100px;
+    padding-left: 100px;
+    text-align: center;
+}
